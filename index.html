@@ -68,10 +68,10 @@
       <div class="lg:col-span-5">
         <div class="relative bg-white p-3 rounded-2xl shadow-xl border border-slate-100">
           <div class="aspect-[4/5] rounded-xl overflow-hidden bg-slate-100 relative">
-            <img id="main-display-img" src="buddy-beach.jpg" alt="Buddy on the beach" class="w-full h-full object-cover transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1000&q=80'" />
+            <img id="main-display-img" src="buddy-profile.jpg" alt="Buddy portrait" class="w-full h-full object-cover transition duration-300" />
             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/80 via-slate-950/40 to-transparent p-4 text-white">
-              <span id="main-display-tag" class="text-xs uppercase tracking-wider font-bold text-amber-300">Beach Outing</span>
-              <p id="main-display-caption" class="text-sm font-medium mt-0.5">High-energy adventures and soaking up the fresh ocean breeze</p>
+              <span id="main-display-tag" class="text-xs uppercase tracking-wider font-bold text-amber-300">Profile Portrait</span>
+              <p id="main-display-caption" class="text-sm font-medium mt-0.5">Sweet, soulful, and always ready for attention and cuddles</p>
             </div>
           </div>
         </div>
@@ -88,54 +88,36 @@
       </div>
     </div>
 
-    <!-- 8 Grid Photos -->
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-      <!-- 1 -->
-      <button onclick="viewPhoto('buddy-beach.jpg', 'Beach Outing', 'Loving the sand, waves, and daily outdoor strolls.')" class="photo-btn active-thumb text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
-        <img src="buddy-beach.jpg" alt="Beach stroll" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=400&q=80'" />
-        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Beach Outing</span>
+    <!-- 5 Photos Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+      <!-- 1: Profile -->
+      <button onclick="viewPhoto('buddy-profile.jpg', 'Profile Portrait', 'Sweet, soulful, and always ready for attention and cuddles.')" class="photo-btn active-thumb text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-profile.jpg" alt="Buddy profile" class="w-full h-full object-cover group-hover:scale-105 transition" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Profile</span>
       </button>
 
-      <!-- 2 -->
-      <button onclick="viewPhoto('buddy-roadtrip.jpg', 'Road Trip Ready', 'Curious and ready for rides in the car.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
-        <img src="buddy-roadtrip.jpg" alt="Road trip" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/Photos-1-001/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=400&q=80'" />
-        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Road Trips</span>
+      <!-- 2: Beach -->
+      <button onclick="viewPhoto('buddy-beach.jpg', 'Beach Adventure', 'Loving the sand, open air, and coastal strolls.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-beach.jpg" alt="Buddy at the beach" class="w-full h-full object-cover group-hover:scale-105 transition" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Beach</span>
       </button>
 
-      <!-- 3 -->
-      <button onclick="viewPhoto('buddy-glasses.jpg', 'The Scholar', 'Patient, calm, and charismatic with family.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
-        <img src="buddy-glasses.jpg" alt="Buddy wearing glasses" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1534361960057-19889db98a1e?auto=format&fit=crop&w=400&q=80'" />
-        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Scholar Look</span>
+      <!-- 3: Outing -->
+      <button onclick="viewPhoto('buddy-outing.jpg', 'Road Trip & Outings', 'Always curious, alert, and happy to travel along.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-outing.jpg" alt="Buddy on an outing" class="w-full h-full object-cover group-hover:scale-105 transition" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Outing</span>
       </button>
 
-      <!-- 4 -->
-      <button onclick="viewPhoto('buddy-bed.jpg', 'Cuddle Bug', 'Loves unwinding on fluffy cushions after playtime.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
-        <img src="buddy-bed.jpg" alt="Cozy in bed" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=400&q=80'" />
-        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Fluffy Cuddles</span>
+      <!-- 4: Halloween -->
+      <button onclick="viewPhoto('buddy-halloween.jpg', 'Holiday Dress Up', 'Patient, good-humored, and festive for the holidays.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-halloween.jpg" alt="Buddy dressed up for Halloween" class="w-full h-full object-cover group-hover:scale-105 transition" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Halloween</span>
       </button>
 
-      <!-- 5 -->
-      <button onclick="viewPhoto('buddy-garden.jpg', 'Garden Sunbathing', 'Happy backyard explorer soaking in the sun.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
-        <img src="buddy-garden.jpg" alt="In the garden" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=400&q=80'" />
-        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Backyard Explorer</span>
-      </button>
-
-      <!-- 6 -->
-      <button onclick="viewPhoto('buddy-harness.jpg', 'Ready for Walkies', 'Attentive listener with signature perked ears.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
-        <img src="buddy-harness.jpg" alt="Red harness" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=400&q=80'" />
-        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Walk Routine</span>
-      </button>
-
-      <!-- 7 -->
-      <button onclick="viewPhoto('buddy-antlers.jpg', 'Holiday Spirit', 'Full of good cheer and dressed up as a reindeer.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
-        <img src="buddy-antlers.jpg" alt="Holiday antlers" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80'" />
-        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Holiday Reindeer</span>
-      </button>
-
-      <!-- 8 -->
-      <button onclick="viewPhoto('buddy-toddler.jpg', 'Gentle Companion', 'Calm and steady around toddlers and family.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
-        <img src="buddy-toddler.jpg" alt="Buddy with toddler" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&w=400&q=80'" />
-        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Gentle Companion</span>
+      <!-- 5: Backyard (matching exact case 'Buddy-backyard.jpg') -->
+      <button onclick="viewPhoto('Buddy-backyard.jpg', 'Backyard Sunbathing', 'Enjoying the yard, garden greens, and afternoon sunshine.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="Buddy-backyard.jpg" alt="Buddy in the backyard" class="w-full h-full object-cover group-hover:scale-105 transition" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Backyard</span>
       </button>
     </div>
   </section>
@@ -221,7 +203,7 @@
         </p>
       </div>
 
-      <form class="mt-8 space-y-4" onsubmit="event.preventDefault(); alert('Thank you for expressing interest in Buddy! Your message has been prepared. Please reach out directly to the current family.');">
+      <form class="mt-8 space-y-4" onsubmit="event.preventDefault(); alert('Thank you for expressing interest in Buddy! Your inquiry has been recorded.');">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Your Name</label>
@@ -255,7 +237,7 @@
     </div>
   </section>
 
-  <!-- Script for Photo Reel Interactive Switching -->
+  <!-- Interactive Image Switching Script -->
   <script>
     lucide.createIcons();
 
@@ -268,10 +250,9 @@
       displayTag.textContent = tag;
       displayCaption.textContent = caption;
 
-      // Update button highlights
       document.querySelectorAll('.photo-btn').forEach(btn => btn.classList.remove('active-thumb'));
-      if (event && event.currentTarget) {
-        event.currentTarget.classList.add('active-thumb');
+      if (window.event && window.event.currentTarget) {
+        window.event.currentTarget.classList.add('active-thumb');
       }
     }
   </script>
