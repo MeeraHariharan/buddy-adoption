@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Buddy | Forever Home Bio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif-title { font-family: 'Playfair Display', Georgia, serif; }
+    .active-thumb { border-color: #0d9488 !important; ring: 4px rgba(13, 148, 136, 0.2); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-500 selection:text-white">
+
+  <!-- Top Announcement Banner -->
+  <header class="bg-gradient-to-r from-teal-700 via-teal-600 to-emerald-600 text-white px-4 py-3 sticky top-0 z-50 shadow-md">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-400 text-amber-950 uppercase tracking-wide">Looking for Forever Home</span>
+        <span class="text-sm font-medium hidden sm:inline text-teal-50">Adopt Buddy &bull; Seattle Metro Area</span>
+      </div>
+      <div class="flex items-center space-x-3 text-sm">
+        <a href="#inquiry" class="bg-white text-teal-800 px-3.5 py-1.5 rounded-lg font-semibold hover:bg-teal-50 transition shadow-sm">Express Interest</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-4 pt-10 pb-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-teal-50 text-teal-800 border border-teal-200 rounded-full text-xs font-semibold mb-4">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-teal-600"></i>
+          <span>Jack Russell Terrier &times; Shih Tzu Mix</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+          Hi, I'm <span class="text-teal-700 font-serif-title italic font-normal">Buddy</span>.
+        </h1>
+        <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+          I've brought warmth and laughter to my family since I came home as an energetic 3-month-old pup on <strong>March 15, 2014</strong>. Everyone meeting me thinks I'm still a young puppy because of my joyful stride and bright personality.
+        </p>
+
+        <!-- Quick Key Badges -->
+        <div class="mt-6 flex flex-wrap gap-2.5">
+          <div class="bg-white border border-slate-200 px-3.5 py-2 rounded-xl flex items-center gap-2 text-sm shadow-sm">
+            <i data-lucide="heart" class="w-4 h-4 text-rose-500"></i>
+            <span class="font-semibold text-slate-700">Loves People &amp; Cuddles</span>
+          </div>
+          <div class="bg-white border border-slate-200 px-3.5 py-2 rounded-xl flex items-center gap-2 text-sm shadow-sm">
+            <i data-lucide="zap" class="w-4 h-4 text-amber-500"></i>
+            <span class="font-semibold text-slate-700">High Energy &amp; Playful</span>
+          </div>
+          <div class="bg-white border border-slate-200 px-3.5 py-2 rounded-xl flex items-center gap-2 text-sm shadow-sm">
+            <i data-lucide="paw-print" class="w-4 h-4 text-emerald-600"></i>
+            <span class="font-semibold text-slate-700">Friendly with Small Dogs</span>
+          </div>
+          <div class="bg-white border border-slate-200 px-3.5 py-2 rounded-xl flex items-center gap-2 text-sm shadow-sm">
+            <i data-lucide="shield-check" class="w-4 h-4 text-teal-600"></i>
+            <span class="font-semibold text-slate-700">Fully Vaccinated &amp; Vet Audited</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Featured Media Frame -->
+      <div class="lg:col-span-5">
+        <div class="relative bg-white p-3 rounded-2xl shadow-xl border border-slate-100">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden bg-slate-100 relative">
+            <img id="main-display-img" src="buddy-beach.jpg" alt="Buddy on the beach" class="w-full h-full object-cover transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1000&q=80'" />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/80 via-slate-950/40 to-transparent p-4 text-white">
+              <span id="main-display-tag" class="text-xs uppercase tracking-wider font-bold text-amber-300">Beach Outing</span>
+              <p id="main-display-caption" class="text-sm font-medium mt-0.5">High-energy adventures and soaking up the fresh ocean breeze</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Visual Gallery -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="flex items-center justify-between mb-4">
+      <div>
+        <h2 class="text-xl font-bold text-slate-900">Buddy's Photo Reel</h2>
+        <p class="text-xs text-slate-500">Click any moment to view in high resolution</p>
+      </div>
+    </div>
+
+    <!-- 8 Grid Photos -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <!-- 1 -->
+      <button onclick="viewPhoto('buddy-beach.jpg', 'Beach Outing', 'Loving the sand, waves, and daily outdoor strolls.')" class="photo-btn active-thumb text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-beach.jpg" alt="Beach stroll" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=400&q=80'" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Beach Outing</span>
+      </button>
+
+      <!-- 2 -->
+      <button onclick="viewPhoto('buddy-roadtrip.jpg', 'Road Trip Ready', 'Curious and ready for rides in the car.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-roadtrip.jpg" alt="Road trip" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/Photos-1-001/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=400&q=80'" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Road Trips</span>
+      </button>
+
+      <!-- 3 -->
+      <button onclick="viewPhoto('buddy-glasses.jpg', 'The Scholar', 'Patient, calm, and charismatic with family.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-glasses.jpg" alt="Buddy wearing glasses" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1534361960057-19889db98a1e?auto=format&fit=crop&w=400&q=80'" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Scholar Look</span>
+      </button>
+
+      <!-- 4 -->
+      <button onclick="viewPhoto('buddy-bed.jpg', 'Cuddle Bug', 'Loves unwinding on fluffy cushions after playtime.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-bed.jpg" alt="Cozy in bed" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=400&q=80'" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Fluffy Cuddles</span>
+      </button>
+
+      <!-- 5 -->
+      <button onclick="viewPhoto('buddy-garden.jpg', 'Garden Sunbathing', 'Happy backyard explorer soaking in the sun.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-garden.jpg" alt="In the garden" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=400&q=80'" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Backyard Explorer</span>
+      </button>
+
+      <!-- 6 -->
+      <button onclick="viewPhoto('buddy-harness.jpg', 'Ready for Walkies', 'Attentive listener with signature perked ears.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-harness.jpg" alt="Red harness" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=400&q=80'" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Walk Routine</span>
+      </button>
+
+      <!-- 7 -->
+      <button onclick="viewPhoto('buddy-antlers.jpg', 'Holiday Spirit', 'Full of good cheer and dressed up as a reindeer.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-antlers.jpg" alt="Holiday antlers" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80'" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Holiday Reindeer</span>
+      </button>
+
+      <!-- 8 -->
+      <button onclick="viewPhoto('buddy-toddler.jpg', 'Gentle Companion', 'Calm and steady around toddlers and family.')" class="photo-btn text-left group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent bg-slate-200 focus:outline-none">
+        <img src="buddy-toddler.jpg" alt="Buddy with toddler" class="w-full h-full object-cover group-hover:scale-105 transition" onerror="this.src='/Users/Meera.hariharan/Desktop/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&w=400&q=80'" />
+        <span class="absolute bottom-1.5 left-1.5 bg-slate-900/70 text-white text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">Gentle Companion</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Bio & Health Card Grid -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Personality & Household Compatibility -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="p-2.5 bg-teal-100 text-teal-800 rounded-xl">
+            <i data-lucide="smile" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Personality &amp; Temperament</h3>
+            <p class="text-xs text-slate-500">Everyday lifestyle &amp; behavior</p>
+          </div>
+        </div>
+
+        <ul class="space-y-3.5 text-sm text-slate-600">
+          <li class="flex items-start gap-2.5">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600 shrink-0 mt-0.5"></i>
+            <span><strong>People Magnet:</strong> Loves greeting human friends, getting stroked, and cuddling up closely on the couch or bed.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600 shrink-0 mt-0.5"></i>
+            <span><strong>Small Dog Friendly:</strong> Enjoys interacting and walking alongside other friendly dogs of his own size.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600 shrink-0 mt-0.5"></i>
+            <span><strong>Puppy Energy:</strong> Despite being born in late 2013/early 2014, his agility, gait, and spirited enthusiasm make passersby think he's still a youngster.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600 shrink-0 mt-0.5"></i>
+            <span><strong>Gentle &amp; Tolerant:</strong> Accustomed to active home life and is consistently patient and calm around toddlers.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Verified Medical & Care History -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl">
+            <i data-lucide="stethoscope" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Health History &amp; Routine</h3>
+            <p class="text-xs text-slate-500">Documented, proactive lifelong care</p>
+          </div>
+        </div>
+
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            <p class="font-semibold text-slate-800">Veterinary Monitoring &amp; Clear Blood Panels</p>
+            <p class="text-xs text-slate-600 mt-0.5">Receives twice-yearly comprehensive physical exams. Recent extensive blood panels confirmed no major underlying clinical concerns.</p>
+          </li>
+          <li class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            <p class="font-semibold text-slate-800">Dental Health Strategy</p>
+            <p class="text-xs text-slate-600 mt-0.5">Because Buddy prefers not to have his teeth brushed, he receives an annual professional deep cleaning at the vet paired with daily dental Greenies.</p>
+          </li>
+          <li class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            <p class="font-semibold text-slate-800">Lifelong Parasite Prevention &amp; Vaccines</p>
+            <p class="text-xs text-slate-600 mt-0.5">Fully up-to-date on all vaccinations. Consistently on monthly <strong>Heartgard</strong> and <strong>NexGard</strong> preventive regimens without interruption.</p>
+          </li>
+          <li class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            <p class="font-semibold text-slate-800">Daily Wellness Routine &amp; Notes</p>
+            <p class="text-xs text-slate-600 mt-0.5">Takes daily hip &amp; joint supplements and a multivitamin chew. Has small benign surface skin warts common for his age, and occasional mild seizures which remain under observation with the vet.</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Ideal Match & Inquiry Form -->
+  <section id="inquiry" class="max-w-3xl mx-auto px-4 py-12">
+    <div class="bg-white border border-teal-100 p-8 rounded-3xl shadow-lg">
+      <div class="text-center max-w-lg mx-auto">
+        <h2 class="text-2xl font-bold text-slate-900">Interested in Welcoming Buddy?</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Buddy thrives in a home that gives him lots of affection, regular walks to enjoy his energy, and keeps up his regular vet exams and supplements.
+        </p>
+      </div>
+
+      <form class="mt-8 space-y-4" onsubmit="event.preventDefault(); alert('Thank you for expressing interest in Buddy! Your message has been prepared. Please reach out directly to the current family.');">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Your Name</label>
+            <input type="text" required placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email / Phone</label>
+            <input type="text" required placeholder="name@email.com / (555) 000-0000" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">About Your Home &amp; Experience</label>
+          <textarea rows="3" required placeholder="Tell us about your household, daily routine, and any current pets..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-xl transition shadow-md flex items-center justify-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Send Adoption Inquiry</span>
+        </button>
+      </form>
+
+      <!-- Share Action -->
+      <div class="mt-6 pt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span>Help Buddy find his match</span>
+        <button onclick="navigator.clipboard.writeText(window.location.href); alert('Page link copied to clipboard!');" class="inline-flex items-center gap-1.5 text-teal-700 font-semibold hover:underline">
+          <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
+          <span>Copy Page Link to Share</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script for Photo Reel Interactive Switching -->
+  <script>
+    lucide.createIcons();
+
+    function viewPhoto(imgSrc, tag, caption) {
+      const displayImg = document.getElementById('main-display-img');
+      const displayTag = document.getElementById('main-display-tag');
+      const displayCaption = document.getElementById('main-display-caption');
+
+      displayImg.src = imgSrc;
+      displayTag.textContent = tag;
+      displayCaption.textContent = caption;
+
+      // Update button highlights
+      document.querySelectorAll('.photo-btn').forEach(btn => btn.classList.remove('active-thumb'));
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active-thumb');
+      }
+    }
+  </script>
+</body>
+</html>
